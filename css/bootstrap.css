@@ -664,19 +664,21 @@ pre code {
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 230px;
+    cursor: pointer;
+    transition: linear 100ms;
+}
+.col-3:hover{
+    opacity: 0.6;
 }
 .col-3 img{
     width: 200px;
-    cursor: pointer;
 }
 .col-3 div:nth-child(2){
+    color: white;
     font-weight: 700;
     margin-top: 5px;
-    cursor: pointer;
 }
-.col-3 div:nth-child(2):hover{
-    text-decoration: underline;
-}
+
 .col-3 button{
     background-color: rgb(82, 126, 110);
     color: #ffffff;
@@ -5936,6 +5938,7 @@ a.close.disabled {
 .carousel-item-prev,
 .carousel-item.active {
     display: block;
+    background-color: black;
 }
 .active.carousel-item-right,
 .carousel-item-next:not(.carousel-item-left) {
@@ -6018,10 +6021,10 @@ a.close.disabled {
     background: no-repeat 50%/100% 100%;
 }
 .carousel-control-prev-icon {
-    background-image: url("/img/logo/left-arrow-back.png");
+    background-image: url("/img/logo/left-arrow-white.png");
 }
 .carousel-control-next-icon {
-    background-image: url("/img/logo/right-forward-arrow.png");
+    background-image: url("/img/logo/right-arrow-white.png");
 }
 .carousel-indicators {
     position: absolute;
@@ -6037,6 +6040,7 @@ a.close.disabled {
     margin-right: 15%;
     margin-left: 15%;
     list-style: none;
+    
 }
 .carousel-indicators li {
     box-sizing: content-box;
@@ -6047,7 +6051,7 @@ a.close.disabled {
     margin-right: 3px;
     margin-left: 3px;
     text-indent: -999px;
-    background-color: #000;
+    background-color: #ffffff;
     background-clip: padding-box;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
