@@ -30,7 +30,7 @@
             </ul>
         </div>
         <div class="login">
-            <img src="/img/logo/search.png" class="search-button">
+            <input type="text" placeholder="Search..." id="input-search">
             <div class="login-round">
                 <img src="./img/logo/default_avatar.png">
                 <div>LOG IN</div>
@@ -122,7 +122,7 @@
                 </div>
                 <div class="edition">
                     <h4>SELECT EDITION</h4>
-                    <select name="edition" id="edition">
+                    <select name="edition" id="edition" onchange="onprice()">
                         <option value="standard">Standard Edition</option>
                         <option value="deluxe">Deluxe Edition</option>
                         <option value="gold">Golden Edition</option>
@@ -131,7 +131,7 @@
                 </div>
                 <div class="bill-deal">
                     <h4>Price: </h4>
-                    <input type="text" name="bill" id="bill" value="29.99$" disabled>
+                    <input type="text" name="edition" id="bill" value="29.99$" disabled>
                 </div>
                 <div class="buy-button">
                     <button>BUY NOW</button>

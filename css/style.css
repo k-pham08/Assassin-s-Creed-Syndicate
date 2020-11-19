@@ -26,7 +26,6 @@ html{
 
 
 
-
 .logo-ubisoft img{
     height: 50px;
     width: 80px;
@@ -55,11 +54,22 @@ html{
     align-items: center;
 }
 
-.search-button{
-    width: 20px;
-    height: 20px;
-    margin: 0 2rem 0 2rem;
+
+#input-search{
+    width: 0;
+    margin-right: 2rem;
+    border: none;
+    color: white;
+    background-image: url('/img/logo/search.png');
+    background-color: #00000000;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    padding: 12px 20px 12px 50px;
+    transition: width 0.2s ease;
     cursor: pointer;
+}
+#input-search:focus{
+    width: 400px;
 }
 .login-round{
     display: flex;
@@ -82,7 +92,6 @@ html{
     width: 22px;
     height: 22px;
 }
-
 
 /* CSS ASSASSIN MENU */
 .ass-menu{
@@ -140,7 +149,9 @@ html{
     width: 100%;
     top: 40rem;
     align-items: center;
+    
 }
+
 .bg-button img:first-child{
     z-index: -1;
 }
@@ -156,7 +167,16 @@ html{
     font-size: 20px;
     width: 16rem;
     height: 4rem;
+    transition: linear 100ms;
+    position: relative;
+    overflow: hidden;
 }
+.bg-button button:hover{
+    background-color: white;
+    color: rgb(160, 23, 23);
+    font-weight: 700;
+}
+
 .ass-section-article{
     margin-top: -10rem;
     position: relative;
@@ -342,6 +362,11 @@ html{
     height: 20px;
     width: 100%;
     margin-top: 2rem;
+}
+#bill{
+    text-align: center;
+    color: rgb(160, 23, 23);
+    font-weight: 500;
 }
 /* CSS Footer */
 .social-contact{
