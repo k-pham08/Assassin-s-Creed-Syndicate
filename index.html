@@ -30,26 +30,19 @@
             </ul>
         </div>
         <div class="login">
+            <img src="/img/logo/search.png" class="search-button">
             <div class="login-round">
                 <img src="./img/logo/default_avatar.png">
                 <div>LOG IN</div>
             </div>
         </div>
     </div>
-    <div class="cover-dropdown">
-        <div class="dropdown">
-            <div>FORUMS</div>
-            <div>UBISOFT CLUB</div>
-            <div>UBISOFT STAR PLAYERS</div>
-            <div>PLAYTEST</div>
-            <div>UBISOFT NEWS</div>
-        </div>
-    </div>
+    
     <div class="bg">
         <div class="bg-button">
             <img src="/img/logo/ACS-white-logo_201992.png" alt="">
-            <button>BUY NOW</button>
-            <img src="/img/logo/ACS-white-logo_201992.png" alt="">
+            <button >BUY NOW</button>
+            <img src="/img/logo/ACS-white-logo_201992.png" data-aos="fade-up" data-aos-duration="1000">
         </div>
         <img src="./img/background/acs-keyart-desk_desktop_201997.jpg" alt="">
     </div>
@@ -64,8 +57,8 @@
         </div>
     </div>
     <div class="overview">
-        <h2>Game Overview</h2>
-        <img src="/img/logo/line-black.png" alt="">
+        <h2 data-aos="fade-up">Game Overview</h2>
+        <img src="/img/logo/line-black.png" data-aos="fade-up">
         <div class="overview-container">
             <img src="/img/overview/ACS-media-SS-4-big_202195_202309_202413.jpg" data-aos="fade-up" data-aos-duration="1000">
             <div data-aos="fade-down" data-aos-duration="1000">
@@ -110,10 +103,43 @@
 
     <div class="buy-section">
         <h2>BUY NOW</h2>
-        <div class="buying-options">
-            
+        <div class="buy-container">
+            <form name="buying-options">
+                <div class="platform">
+                    <h4>PLATFORM</h4>
+                    <select name="platform">
+                        <option value="pc-epic">PC - Epic Games Store</option>
+                        <option value="pc-ubisoft">PC - Ubisoft Store</option>
+                        <option value="pc-steam">PC - Steam</option>
+                        <option value="playstation4">Playstaton 4</option>
+                        <option value="xbox">Xbox One</option>
+                    </select>
+                </div>
+                <div class="version">
+                    <h4>SELECT VERSION</h4>
+                    <input type="checkbox" name="version" value="digital" checked disabled>
+                    <span>Digital</span>
+                </div>
+                <div class="edition">
+                    <h4>SELECT EDITION</h4>
+                    <select name="edition" id="edition">
+                        <option value="standard">Standard Edition</option>
+                        <option value="deluxe">Deluxe Edition</option>
+                        <option value="gold">Golden Edition</option>
+                        <option value="season">Season-Pass</option>
+                    </select>
+                </div>
+                <div class="bill-deal">
+                    <h4>Price: </h4>
+                    <input type="text" name="bill" id="bill" value="29.99$" disabled>
+                </div>
+                <div class="buy-button">
+                    <button>BUY NOW</button>
+                </div>
+            </form>
+            <img src="/img/content/asc-syndicate-season-pass.jpg" class="buy-img">
         </div>
-        <img src="/img/content/asc-syndicate-season-pass.jpg" alt="">
+        <img src="/img/logo/line-white.png" class="line-buy">
     </div>
 
     <div class="all-games-tittle">
@@ -376,11 +402,12 @@
     <div class="end">© 2019 Ubisoft Entertainment. All Rights Reserved. Ubisoft, Ubi.com and the Ubisoft logo are
         trademarks of Ubisoft Entertainment in the U.S. and/or other countries.
     </div>
-    <script src="index.js"></script>
+    
     <script src="./js lib/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <script src="index.js"></script>
 </body>
 
 </html>
