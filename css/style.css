@@ -25,11 +25,13 @@ html{
 
 .dropdown{
     display: flex;
+    position: absolute;
     color: white;
     justify-content: center;
     align-items: center;
     position: absolute;
-    background-color: #00000080;
+    background-color: #000000;
+    opacity: 0.8;
     margin-bottom: -4rem;
 }
 .dropdown div{
@@ -42,6 +44,10 @@ html{
 .dropdown div:hover{
     opacity: 1;
     background-color: rgb(28, 28, 28);
+}
+.main-menu ul li:hover .dropdown{
+    opacity: 0.8;
+    pointer-events: all;
 }
 
 .logo-ubisoft img{
@@ -452,13 +458,11 @@ html{
     margin-top:  5rem ;
     color: rgb(228, 21, 21);
 }
-.all-games-tittle img{
+.all-games-tittle p img{
     margin-right: 1rem;
-}
-.all-games-tittle img:first-child{
-    margin-bottom: -5rem;
 }
 .all-games-tittle span span{
     color:red
 }
+
 
