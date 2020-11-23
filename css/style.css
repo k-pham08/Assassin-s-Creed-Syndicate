@@ -14,7 +14,7 @@ html{
 /* CSS UBISOFT MENU */
 .ubisoft-menu{
     display: flex;
-    background-image: linear-gradient(180deg,#000000,rgb(34, 34, 34));
+    background-image: linear-gradient(180deg,#000000,rgb(58, 58, 58));
     color: white;
     justify-content: space-between;
     align-items: center;
@@ -65,7 +65,7 @@ html{
     background-repeat: no-repeat;
     background-position: 10px 10px;
     padding: 12px 20px 12px 50px;
-    transition: width 0.2s ease;
+    transition: width 0.5s ease-in-out;
     cursor: pointer;
 }
 #input-search:focus{
@@ -361,135 +361,13 @@ html{
     margin: auto;
     height: 20px;
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 5rem;
 }
 #bill{
     text-align: center;
     color: rgb(160, 23, 23);
     font-weight: 500;
 }
-/* CSS Footer */
-.social-contact{
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 5px;
-}
-.social-contact ul{
-    list-style: none;
-    display: flex; 
-    padding: 8px 0 8px 0;
-    margin-bottom: 0;
-}
-.social-contact img{
-    height: 32px;
-    width: 32px;
-    opacity: 0.7;
-    cursor: pointer;
-    transition: linear 80ms;
-}
-.social-contact span{
-    color: #888888;
-    font-size: 14px;
-    margin-left: 2rem;
-}
-.social-contact ul li{
-    margin: 0 1rem 0 1rem;
-}
-.social-contact img:hover{
-    opacity: 1;
-}
-
-/* Global Footer */ 
-.global-footer{
-    background-color: rgb(29, 30, 33);
-    display: flex;
-    justify-content: space-between;
-}
-.footer-table{
-    margin-top: 3rem;
-    font-weight: 500;
-}
-.footer-table td{
-    color: white;
-    width: 12rem;
-    padding-top: 5px;
-    cursor: pointer;
-    text-align: center;
-}
-.footer-table td:hover{
-    text-decoration: underline;
-}
-.legaly{
-    margin: 3rem 0 5rem 5rem;
-}
-.legaly img{
-    width: 120px;
-    height: 40px;
-    margin-bottom: 5px;
-    cursor: pointer;
-}
-.footer-link a{
-    color: rgb(136, 135, 135);
-    font-size: 12px;
-}
-.footer-link a:hover{
-    color: white;
-}
-.footer-link a:first-child{
-    padding-right: 10px;
-}
-.lang{
-    height: fit-content;
-    color: white;
-    margin: 3rem 5rem 0 0;
-    display: flex;
-    flex-direction: column;
-}
-.lang img{
-    width: 16px;
-    height: 16px;
-}
-.english, .vietnamese{
-    display: flex;
-    align-items: center;
-}
-.english span{
-    cursor: pointer;
-    position: relative;
-}
-
-.english span:hover .vietnamese{
-    display: block;
-}
-.lang-container{
-    margin-right: 5px;
-    font-weight: 500;
-}
-.lang button{
-    background-color: #ffffff00;
-    border: none;
-    margin: 0 0 5px 5px;
-}
-.rate{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 7rem;
-    right: 2rem;
-}
-.end{
-    display: block;
-    background-color: rgb(29, 30, 33);
-    color:  rgb(136, 135, 135);
-    font-size: 12px;
-    text-align: center;
-    padding: 0 1rem 1rem 1rem;
-}
-
 .line{
     display: flex;
     background-color: #000000;
@@ -498,7 +376,7 @@ html{
 }
 .line img{
     height: 20px;
-    width: 100%;
+    width: 80%;
 }
 
 .all-games-tittle{
@@ -526,5 +404,54 @@ html{
 .all-games-tittle span span{
     color:red
 }
+/* CSS Footer */
+.footer{
+    background-color: black;
+}
+.footer-link ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(136, 135, 135);
+    margin: 0;
+}
+.footer-link ul li{
+    margin: 5px;
+    font-style: italic;
+}
+.footer-link-tittle{
+    cursor: pointer;
+}
+.contact-tittle{
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    font-weight: 600;
+    font-style: italic;
+}
+.contact-icon ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.contact-icon ul li{
+    margin: 0 10px 0 10px;
+}
+.contact-icon ul li img{
+    width: 30px;
+    height: 30px;
+}
+.end{
+    display: block;
+    background-color: black;
+    color:  rgb(136, 135, 135);
+    font-size: 12px;
+    text-align: center;
+    padding: 0 1rem 1rem 1rem;
+}
+
+
 
 

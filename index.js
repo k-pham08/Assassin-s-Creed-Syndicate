@@ -1,4 +1,3 @@
-
 function onprice(){
     var edition = document.getElementById('edition');
     if(edition.value == 'standard'){
