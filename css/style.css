@@ -153,7 +153,8 @@ html{
     
 }
 
-.bg-button img:first-child{
+
+.bg-button .hidden{
     z-index: -1;
 }
 .bg-button img{
@@ -172,12 +173,25 @@ html{
     position: relative;
     overflow: hidden;
 }
-.bg-button button:hover{
-    background-color: white;
-    color: rgb(160, 23, 23);
-    font-weight: 700;
+.bg-button button img{
+    transform: rotate(-80deg);
+    position: absolute;
+    height: 240px;
+    width: 15px;
+    top: -125px;
+    right: 370px;
+    transition: all 0.5s ease-out;
+}
+.bg-button button div{
+    transition: all 0.5s ease-out
 }
 
+.bg-button button:hover img{
+    transform: translateX(250px) translateY(55px) rotate(-80deg);
+}
+.bg-button button:hover div{
+    transform: translateX(250px);
+}
 .ass-section-article{
     margin-top: -10rem;
     position: relative;
