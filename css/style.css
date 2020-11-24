@@ -63,7 +63,8 @@ html{
     background-image: url('/img/logo/search.png');
     background-color: #00000000;
     background-repeat: no-repeat;
-    background-position: 10px 10px;
+    background-size: 20px 20px;
+    background-position: 15px 15px;
     padding: 12px 20px 12px 50px;
     transition: width 0.5s ease-in-out;
     cursor: pointer;
@@ -408,13 +409,50 @@ html{
 .footer{
     background-color: black;
 }
+.social-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-logo img{
+    margin: 2rem 1rem 2rem 1rem;
+    cursor: pointer;
+}
+
+.contact-tittle{
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    font-weight: 600;
+    font-style: italic;
+    margin: 2rem 0 1rem 0;
+}
+.contact-icon ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.contact-icon ul li{
+    margin: 0 10px 1rem 10px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: linear 100ms;
+}
+.contact-icon ul li:hover{
+    opacity: 1;
+}
+.contact-icon ul li img{
+    width: 30px;
+    height: 30px;
+}
 .footer-link ul{
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
     color: rgb(136, 135, 135);
-    margin: 0;
+    margin: 1rem;
 }
 .footer-link ul li{
     margin: 5px;
@@ -422,26 +460,10 @@ html{
 }
 .footer-link-tittle{
     cursor: pointer;
+    transition: linear 80ms;
 }
-.contact-tittle{
-    text-align: center;
-    font-size: 32px;
+.footer-link-tittle:hover{
     color: white;
-    font-weight: 600;
-    font-style: italic;
-}
-.contact-icon ul{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-}
-.contact-icon ul li{
-    margin: 0 10px 0 10px;
-}
-.contact-icon ul li img{
-    width: 30px;
-    height: 30px;
 }
 .end{
     display: block;
@@ -449,7 +471,16 @@ html{
     color:  rgb(136, 135, 135);
     font-size: 12px;
     text-align: center;
-    padding: 0 1rem 1rem 1rem;
+    padding: 1rem 1rem 3rem 1rem;
+}
+.line-footer{
+    display: flex;
+    background-color: #000000;
+    justify-content: center;
+}
+.line-footer img{
+    height: 20px;
+    width: 80%;
 }
 
 
