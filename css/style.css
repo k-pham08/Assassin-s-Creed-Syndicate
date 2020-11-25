@@ -176,7 +176,6 @@ html{
     
 }
 
-
 .bg-button .hidden{
     z-index: -1;
 }
@@ -188,33 +187,53 @@ html{
     background-color: rgb(160, 23, 23);
     border: none;
     color: white;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 20px;
     width: 16rem;
     height: 4rem;
-    transition: linear 100ms;
     position: relative;
     overflow: hidden;
 }
-.bg-button button img{
-    transform: rotate(-80deg);
-    position: absolute;
-    height: 240px;
-    width: 15px;
-    top: -125px;
-    right: 370px;
-    transition: all 0.5s ease-out;
-}
 .bg-button button div{
-    transition: all 0.5s ease-out
+    position: relative;
+    z-index: 2;
+}
+.bg-button button img:first-child{
+    position: absolute;
+    top: 30px;
+    left: -110px;
+    transform: rotate(-45deg);
+    width: 100%;
+    height: 500px;
+    transition: linear 300ms;
+}
+.bg-button button img:not(:first-child){
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: -390px;
+    right: -155px;
+    transform: rotate(-45deg);
+    transition: linear 300ms;
+}
+.bg-button button span:first-child{
+    margin-right: 20px;
+}
+.bg-button button:hover span:first-child{
+    color: rgb(160, 23, 23);
+    font-weight: 700;
+}
+.bg-button button:hover span:not(:first-child){
+    color: rgb(160, 23, 23);
+    font-weight: 700;
+}
+.bg-button button:hover img:first-child{
+    transform: translateY(-155px) rotate(-45deg);
+}
+.bg-button button:hover img:not(:first-child){
+    transform: translateY(168px) rotate(-45deg);
 }
 
-.bg-button button:hover img{
-    transform: translateX(250px) translateY(55px) rotate(-80deg);
-}
-.bg-button button:hover div{
-    transform: translateX(250px);
-}
 .ass-section-article{
     margin-top: -10rem;
     position: relative;
@@ -379,6 +398,10 @@ html{
     width: 50%;
     margin-top: 2rem;
 }
+.buy-button{
+    position: relative;
+    overflow: hidden;
+}
 .buy-button button{
     width: 300px;
     height: 50px;
@@ -389,11 +412,25 @@ html{
     background-color: rgb(160, 23, 23);
     transition: linear 100ms;
 }
-.buy-button button:hover{
-    background-color: white;
-    color: rgb(160, 23, 23);
-    border: solid rgb(160, 23, 23) 3px;
-    font-size: 700;
+.buy-button button div{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    z-index: 2;
+    font-weight: 500;
+}
+.buy-button img{
+    transform: rotate(-90deg);
+    position: absolute;
+    height: 240px;
+    width: 10px;
+    top: -93px;
+    left: -125px;
+    transition: all 0.5s ease-out;
+}
+
+.buy-button:hover img{
+    transform: translateX(270px) rotate(-90deg);
 }
 .line-buy{
     margin: auto;
