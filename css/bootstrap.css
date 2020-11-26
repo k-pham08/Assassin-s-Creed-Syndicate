@@ -6021,17 +6021,17 @@ a.close.disabled {
     background: no-repeat 50%/100% 100%;
 }
 .carousel-control-prev-icon {
-    background-image: url("/img/logo/left-arrow-white.png");
+    background-image: url("../img/logo/left-arrow-white.png");
 }
 .carousel-control-next-icon {
-    background-image: url("/img/logo/right-arrow-white.png");
+    background-image: url("../img/logo/right-arrow-white.png");
 }
 .carousel-indicators {
     position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 15;
+    z-index: 1;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
