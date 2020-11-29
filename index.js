@@ -14,3 +14,13 @@ function onprice(){
     }
 }
 
+var eng = document.getElementById('lang-button');
+var vn = document.getElementById('vn-button');
+function langClick(){
+    eng.classList.toggle('active');
+    vn.classList.toggle('langdown');
+}
+function langClose(){
+    eng.classList.remove('active');
+    vn.classList.remove('langdown');
+}

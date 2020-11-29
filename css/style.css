@@ -30,19 +30,28 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+.logo-ubisoft > img{
+    height: 50px;
+    width: 80px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    cursor: pointer;
 }
 .lang-button{
+    width: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 14px;
     font-weight: 700;
-    opacity: 0.7;
     background-color: #292828;
     color: white;
     padding: 18px 10px 18px 10px;
     border: none;
     transition: linear 200ms;
+    
 }
 .lang-button  img:first-child{
     width: 15px;
@@ -54,23 +63,36 @@ html{
     height: 15px;
     margin-left: 10px;
 }
-.lang-button:hover{
-    opacity: 1;
+
+.lang-button:focus{
+    outline: none;
 }
-.lang-button:focus img:last-child{
+#eng-button{
+    position: relative;
+    z-index: 2;
+}
+.active{
     transform: rotate(180deg);
 }
-.logo-ubisoft > img{
-    height: 50px;
-    width: 80px;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    cursor: pointer;
+#vn-button{
+    position: absolute;
+    top: 0;
+    left: 144px;
+    opacity: 0.6;
+    background-color: rgb(102, 102, 102);
 }
+#vn-button:hover{
+    opacity: 1;
+}
+.langdown{
+    transform: translateY(56.8px);
+}
+
+
 .main-menu > ul{
     list-style: none;
     display: flex;
-    margin: 0 0 0 5.5rem;
+    margin: 0;
 }
 
 .main-menu ul li{
@@ -128,7 +150,7 @@ html{
     cursor: pointer;
 }
 #input-search:focus{
-    width: 400px;
+    width: 370px;
 }
 .login-round{
     display: flex;
