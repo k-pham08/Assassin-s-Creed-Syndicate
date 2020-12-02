@@ -15,6 +15,9 @@ html{
 body{
     overflow-y: hidden;
 }
+.main{
+    opacity: 0;
+}
 /* CSS UBISOFT MENU */
 .preloader{
     position: fixed;
