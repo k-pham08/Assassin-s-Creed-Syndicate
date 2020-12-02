@@ -11,86 +11,96 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script src="./js lib/bootstrap.bundle.js"></script>
+    <script src="./LibraryJS/bootstrap.bundle.js"></script>
     <title>Assassin's Creed</title>
 </head>
 
 
 <body>
+    <!--PreLoader-->
     <div class="preloader">
-        <img src="./img/logo/asc-syn-preloader.png" alt="">
+        <img src="./img/logo/asc-syn-preloader.png" alt="preloader-background">
     </div>
+    
+    <!--Main Body-->
     <div class="main">
-        <div class="ubisoft-menu">
-            <div class="logo-ubisoft">
-                <img src="./img/logo/ubisoft-white.png" alt="">
-                <button class="lang-button" id="eng-button" onclick="langClick()">
-                    <img src="./img/logo/united-kingdom .png" alt="">
-                    <div>ENGLISH</div>
-                    <img src="./img/logo/arrow-down.png" id="lang-button">
-                </button>
-                <button class="lang-button" id="vn-button">
-                    <img src="./img/logo/vietnam.png" alt="">
-                    <div>VIETNAMESE</div>
-                </button>
-            </div>
-            <div class="main-menu">
-                <ul>
-                    <li>MORE GAMES</li>
-                    <li>STORE</li>
-                    <li>COMMUNITY
-                        <ul class="drop-down">
-                            <li>FORUMS</li>
-                            <li>UBISOFT CLUB</li>
-                            <li>UBISOFT STAR PLAYERS</li>
-                            <li>PLAYTEST</li>
-                            <li>NEWS</li>
-                        </ul>
-                    </li>
-                    <li>COMPANY
-                        <ul class="drop-down">
-                            <li>OVERVIEW</li>
-                            <li>PRESS</li>
-                            <li>INVESTORS</li>
-                            <li>START-UPS</li>
-                        </ul>
-                    </li>
-                    <li>CAREERS
-                        <ul class="drop-down">
-                            <li>THE UBISOFT EXPERIENCE</li>
-                            <li>GRADS & INTERNS</li>
-                            <li>SEARCH FOR JOB</li>
-                            <li>OUR LOCATION</li>
-                        </ul>
-                    </li>
-                    <li>SUPPORT</li>
-                </ul>
-            </div>
-            <div class="login">
-                <input type="text" placeholder="Search..." id="input-search">
-                <div class="login-round">
-                    <img src="./img/logo/default_avatar.png">
-                    <div>LOG IN</div>
+        <!--NavBar Menu-->
+        <div class="menubar">
+            <div class="ubisoft-menu">
+                <div class="logo-ubisoft">
+                    <img src="./img/logo/ubisoft-white.png" alt="logo-ubisoft">
+                    <button class="lang-button" id="eng-button" onclick="langClick()">
+                        <img src="./img/logo/united-kingdom .png" alt="England">
+                        <div class="language">ENGLISH</div>
+                        <img src="./img/logo/arrow-down.png" id="lang-button">
+                    </button>
+                    <button class="lang-button" id="vn-button">
+                        <img src="./img/logo/vietnam.png" alt="Vietnam">
+                        <div class="language">VIETNAMESE</div>
+                    </button>
+                </div>
+                <div class="main-menu">
+                    <ul>
+                        <li>MORE GAMES</li>
+                        <li>STORE</li>
+                        <li>COMMUNITY
+                            <ul class="drop-down">
+                                <li>FORUMS</li>
+                                <li>UBISOFT CLUB</li>
+                                <li>UBISOFT STAR PLAYERS</li>
+                                <li>PLAYTEST</li>
+                                <li>NEWS</li>
+                            </ul>
+                        </li>
+                        <li>COMPANY
+                            <ul class="drop-down">
+                                <li>OVERVIEW</li>
+                                <li>PRESS</li>
+                                <li>INVESTORS</li>
+                                <li>START-UPS</li>
+                            </ul>
+                        </li>
+                        <li>CAREERS
+                            <ul class="drop-down">
+                                <li>THE UBISOFT EXPERIENCE</li>
+                                <li>GRADS & INTERNS</li>
+                                <li>SEARCH FOR JOB</li>
+                                <li>OUR LOCATION</li>
+                            </ul>
+                        </li>
+                        <li>SUPPORT</li>
+                    </ul>
+                </div>
+                <div class="login">
+                    <input type="text" placeholder="Search..." id="input-search">
+                    <div class="login-round">
+                        <img src="./img/logo/default_avatar.png" alt="login">
+                        <div>LOG IN</div>
+                    </div>
                 </div>
             </div>
         </div>
         
-        <div class="bg">
-            <div class="bg-button">
-                <img src="./img/logo/ACS-white-logo_201992.png" class="hidden">
-                <button>
-                    <img src="./img/logo/black-bar.png" alt="">
-                    <div><span>BUY</span><span>NOW</span></div>
-                    <img src="./img/logo/white-bar.png" alt="">
-                </button>
-                <img src="./img/logo/ACS-white-logo_201992.png" data-aos="fade-up" data-aos-duration="1000">
+        <!--Banner-->
+        <div class="banner">
+            <div class="bg">
+                <div class="bg-button">
+                    <img src="./img/logo/ACS-white-logo_201992.png" class="hidden">
+                    <button>
+                        <img src="./img/logo/black-bar.png" alt="">
+                        <div><span>BUY</span><span>NOW</span></div>
+                        <img src="./img/logo/white-bar.png" alt="">
+                    </button>
+                    <img src="./img/logo/ACS-white-logo_201992.png" data-aos="fade-up" data-aos-duration="1000">
+                </div>
+                <a href="#ass-section-article">
+                    <img src="./img/logo/mouse-down.png" alt="">
+                </a>
+                <img src="./img/background/acs-keyart-desk_desktop_201997.jpg" alt="">
             </div>
-            <a href="#ass-section-article">
-                <img src="./img/logo/mouse-down.png" alt="">
-            </a>
-            <img src="./img/background/acs-keyart-desk_desktop_201997.jpg" alt="">
         </div>
-    
+        
+        <!--Article-->
         <div class="ass-section-article" id="ass-section-article">
             <img src="./img/background/ass-secsion-background-article.jpg" >
             <div data-aos="fade-zoom-in" data-aos-duration="1000">
@@ -100,6 +110,7 @@
                     now!</p>
             </div>
         </div>
+        <!--Overview-->
         <div class="overview">
             <h2 data-aos="fade-up">Game Overview</h2>
             <img src="./img/logo/line-black.png" data-aos="fade-up">
@@ -146,9 +157,8 @@
                 </div>
             </div>
         </div>
-    
         
-    
+        <!--Buying Form-->
         <div class="buy-section">
             <h2>BUY NOW</h2>
             <div class="buy-container">
@@ -193,198 +203,202 @@
             </div>
             <img src="./img/logo/line-white.png" class="line-buy">
         </div>
-    
-        <div class="all-games-tittle">
-            <h2>YOU MAY ALSO LIKE</h2>
-            <img src="./img/logo/line-white.png" style="width: 10rem;height: 30px;">
-            <p>
-                <img src="./img/logo/gamepad.png" style="width: 30px;height: 30px;">
-                <span><span>18</span> GAMES</span>
-            </p>
-        </div>
-    
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-3">
-                            <img src="./img/all-ac-games/ac-valhalla.jpg">
-                            <div>Assassin's Creed Valhalla</div>
-                            <div>
-                                <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/wii.png" style="width: 15px;height: 15px;">
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <img src="./img/all-ac-games/ac-the-rebel-collection.jpg">
-                            <div>Assassin's The Rebel Collection</div>
-                            <div>
-                                <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <img src="./img/all-ac-games/ac3_remastered.jpg">
-                            <div>Assassin's Creed III Remastered</div>
-                            <div>
-                                <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <img src="./img/all-ac-games/ac-rebelion.png">
-                            <div>Assassin's Creed Rebelion</div>
-                            <div>
-                                <img src="img/logo/apple-ios.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/android.png" style="width: 15px;height: 15px;">
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <img src="./img/all-ac-games/ac-odysey.jpg">
-                            <div>Assassin's Creed Odyssey</div>
-                            <div>
-                                <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <img src="./img/all-ac-games/ac-rogue-remastered.jpg">
-                            <div>Assassin's Rogue Remastered</div>
-                            <div>
-                                <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/wii.png" style="width: 15px;height: 15px;">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-3">
-                            <img src="./img/all-ac-games/ac-origin.png">
-                            <div>Assassin's Creed Origins</div>
-                            <div>
-                                <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <img src="./img/all-ac-games/ac-enzio-collection.jpg">
-                            <div>Assassin's Creed Enzio Collection</div>
-                            <div>
-                                <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <img src="./img/all-ac-games/ac-chronicles.jpg">
-                            <div>Assassin's Creed Chronicles</div>
-                            <div>
-                                <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/wii.png" style="width: 15px;height: 15px;">
-                            </div>
-                        </div>
-    
-                        <div class="col-3">
-                            <img src="./img/all-ac-games/ac-untiy.jpg">
-                            <div>Assassin's Creed Unity</div>
-                            <div>
-                                <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <img src="./img/all-ac-games/ac-rogue.jpg">
-                            <div>Assassin's Creed Rogue</div>
-                            <div>
-                                <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-3">
-                            <img src="./img/all-ac-games/ac-iv-black-flag.jpg">
-                            <div>Assassin's Creed IV Black Flag</div>
-                            <div>
-                                <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <img src="./img/all-ac-games/ac-iii.jpg">
-                            <div>Assassin's Creed III</div>
-                            <div>
-                                <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <img src="./img/all-ac-games/ac-revelations.jpg">
-                            <div>Assassin's Creed Revelations</div>
-                            <div>
-                                <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <img src="./img/all-ac-games/ac-brotherhood.jpg">
-                            <div>Assassin's Creed Brotherhood</div>
-                            <div>
-                                <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
-                                <img src="img/logo/wii.png" style="width: 15px;height: 15px;">
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <img src="./img/all-ac-games/ac-ii.jpg">
-                            <div>Assassin's Creed II</div>
-                            <div>
-                                <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <img src="./img/all-ac-games/ac-i.jpg">
-                            <div>Assassin's Creed</div>
-                            <div>
-                                <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-    
-        </div>
-        <div class="line">
-            <img src="./img/logo/line-white.png">
-        </div>
         
+        <!--All Games Slider-->
+        <div class="all-games-slide">
+            <div class="all-games-tittle">
+                <h2>YOU MAY ALSO LIKE</h2>
+                <img src="./img/logo/line-white.png" style="width: 10rem;height: 30px;">
+                <p>
+                    <img src="./img/logo/gamepad.png" style="width: 30px;height: 30px;">
+                    <span><span>18</span> GAMES</span>
+                </p>
+            </div>
+        
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="./img/all-ac-games/ac-valhalla.jpg">
+                                <div>Assassin's Creed Valhalla</div>
+                                <div>
+                                    <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/wii.png" style="width: 15px;height: 15px;">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <img src="./img/all-ac-games/ac-the-rebel-collection.jpg">
+                                <div>Assassin's The Rebel Collection</div>
+                                <div>
+                                    <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <img src="./img/all-ac-games/ac3_remastered.jpg">
+                                <div>Assassin's Creed III Remastered</div>
+                                <div>
+                                    <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <img src="./img/all-ac-games/ac-rebelion.png">
+                                <div>Assassin's Creed Rebelion</div>
+                                <div>
+                                    <img src="img/logo/apple-ios.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/android.png" style="width: 15px;height: 15px;">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <img src="./img/all-ac-games/ac-odysey.jpg">
+                                <div>Assassin's Creed Odyssey</div>
+                                <div>
+                                    <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <img src="./img/all-ac-games/ac-rogue-remastered.jpg">
+                                <div>Assassin's Rogue Remastered</div>
+                                <div>
+                                    <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/wii.png" style="width: 15px;height: 15px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="./img/all-ac-games/ac-origin.png">
+                                <div>Assassin's Creed Origins</div>
+                                <div>
+                                    <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <img src="./img/all-ac-games/ac-enzio-collection.jpg">
+                                <div>Assassin's Creed Enzio Collection</div>
+                                <div>
+                                    <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <img src="./img/all-ac-games/ac-chronicles.jpg">
+                                <div>Assassin's Creed Chronicles</div>
+                                <div>
+                                    <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/wii.png" style="width: 15px;height: 15px;">
+                                </div>
+                            </div>
+        
+                            <div class="col-3">
+                                <img src="./img/all-ac-games/ac-untiy.jpg">
+                                <div>Assassin's Creed Unity</div>
+                                <div>
+                                    <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <img src="./img/all-ac-games/ac-rogue.jpg">
+                                <div>Assassin's Creed Rogue</div>
+                                <div>
+                                    <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="./img/all-ac-games/ac-iv-black-flag.jpg">
+                                <div>Assassin's Creed IV Black Flag</div>
+                                <div>
+                                    <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <img src="./img/all-ac-games/ac-iii.jpg">
+                                <div>Assassin's Creed III</div>
+                                <div>
+                                    <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <img src="./img/all-ac-games/ac-revelations.jpg">
+                                <div>Assassin's Creed Revelations</div>
+                                <div>
+                                    <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <img src="./img/all-ac-games/ac-brotherhood.jpg">
+                                <div>Assassin's Creed Brotherhood</div>
+                                <div>
+                                    <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                                    <img src="img/logo/wii.png" style="width: 15px;height: 15px;">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <img src="./img/all-ac-games/ac-ii.jpg">
+                                <div>Assassin's Creed II</div>
+                                <div>
+                                    <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <img src="./img/all-ac-games/ac-i.jpg">
+                                <div>Assassin's Creed</div>
+                                <div>
+                                    <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+        
+            </div>
+            <div class="line">
+                <img src="./img/logo/line-white.png">
+            </div>
+        </div>
+
+        <!--Footer-->
         <div class="footer">
             <div class="social-logo">
                 <img src="./img/logo/ubisoft-white.png" data-aos="flip-down" data-aos-duration="1500" >
@@ -463,8 +477,9 @@
             </div>
         </div>
     </div>
-    <script src="./js lib/aos.js"></script>
+    <!--Add Javascript File-->
+    <script src="./LibraryJS/aos.js"></script>
     <script src="index.js"></script>
+    <!--------------------------------------------------------------------------------------------------------------------------------->
 </body>
-
 </html>

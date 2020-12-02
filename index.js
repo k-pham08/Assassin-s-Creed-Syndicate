@@ -1,4 +1,6 @@
-AOS.init();
+AOS.init(); // AOS Initialization
+//-------------------------------------------//
+// PreLoader Time Out 5s
 function preloadInit(){
     const preload = document.querySelector(".preloader");
     const body = document.querySelector("body");
@@ -8,9 +10,16 @@ function preloadInit(){
         preload.style.zIndex = -30;
         body.style.overflowY = 'visible';
         main.style.opacity = 1;
-    }, 5000);
+    }, 4000);
 }
-preloadInit();
+//-------------------------------------------//
+// Click Event for Changing Language
+function langClick(){
+    document.getElementById('lang-button').classList.toggle('active-lang');
+    document.getElementById('vn-button').classList.toggle('langdown');
+}
+//-------------------------------------------//
+// Change Product's Price When Change The Options
 function onprice(){
     var edition = document.getElementById('edition');
     if(edition.value == 'standard'){
@@ -26,11 +35,11 @@ function onprice(){
         document.getElementById('bill').value = 29.99 + '$'
     }
 }
+//-------------------------------------------//
+preloadInit(); // Preloader Initialization
 
 
-function langClick(){
-    document.getElementById('lang-button').classList.toggle('active-lang');
-    document.getElementById('vn-button').classList.toggle('langdown');
-}
+
+
         
 
