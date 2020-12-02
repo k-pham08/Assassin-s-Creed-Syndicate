@@ -12,7 +12,40 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    overflow-y: hidden;
+}
 /* CSS UBISOFT MENU */
+.preloader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/background/preloader-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    z-index: 30;
+    transition: 800ms linear;
+}
+.preloader img{
+    position: absolute;
+    width: 5rem;
+    margin: auto;
+    left: 0;
+    right: 0px;
+    bottom: 100px;
+    opacity: 0;
+    animation: preloading ease 0.8s infinite alternate;
+}
+
+@keyframes preloading{
+   from{
+       opacity: 0;
+   }
+   to{
+       opacity: 1;
+   }
+}
 .ubisoft-menu{
     display: flex;
     background-image: linear-gradient(180deg,#000000,rgb(58, 58, 58));
@@ -71,14 +104,14 @@ html{
     position: relative;
     z-index: 2;
 }
-.active{
+.active-lang{
     transform: rotate(180deg);
 }
 #vn-button{
     position: absolute;
     top: 0;
     left: 144px;
-    opacity: 0.6;
+    opacity: 0.8;
     background-color: rgb(102, 102, 102);
 }
 #vn-button:hover{
@@ -150,7 +183,7 @@ html{
     cursor: pointer;
 }
 #input-search:focus{
-    width: 370px;
+    width: 360px;
 }
 .login-round{
     display: flex;
@@ -219,8 +252,9 @@ html{
 .bg a{
     position: absolute;
     width: 40px;
-    top: 700px;
-    left: 732px;
+    right: 0;
+    left: 0;
+    margin: auto;
     z-index: 5;
     animation: muosedown 1s infinite;
 }
@@ -326,7 +360,6 @@ html{
     z-index: 1;
     width: 100%;
     text-align: center;
-    opacity: 0.9;
 }
 .ass-section-article div h1{
     font-size: 30px;

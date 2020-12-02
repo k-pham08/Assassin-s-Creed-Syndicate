@@ -1,3 +1,13 @@
+function init(){
+    const preload = document.querySelector(".preloader");
+    const body = document.querySelector("body");
+    setTimeout(() => {
+        preload.style.opacity = 0;
+        preload.style.zIndex = -30;
+        body.style.overflowY = 'visible';
+    }, 5000);
+}
+init();
 function onprice(){
     var edition = document.getElementById('edition');
     if(edition.value == 'standard'){
@@ -14,13 +24,9 @@ function onprice(){
     }
 }
 
-var eng = document.getElementById('lang-button');
-var vn = document.getElementById('vn-button');
+
 function langClick(){
-    eng.classList.toggle('active');
-    vn.classList.toggle('langdown');
-}
-function langClose(){
-    eng.classList.remove('active');
-    vn.classList.remove('langdown');
+    document.getElementById('lang-button').classList.toggle('active-lang');
+    document.getElementById('vn-button').classList.toggle('langdown');
+    
 }
