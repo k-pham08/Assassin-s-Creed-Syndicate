@@ -297,7 +297,7 @@ body{
 
 /* Article Design */
 .ass-section-article{
-    margin-top: -10rem;
+    margin-top: -9rem;
     position: relative;
     border: solid rgb(160, 23, 23) 3rem;
     display: flex;
