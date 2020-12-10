@@ -1,6 +1,4 @@
-AOS.init(); // AOS Initialization
-//-------------------------------------------//
-// PreLoader Time Out 5s
+// PreLoader Time Out 4s //
 function preloadInit(){
     const preload = document.querySelector(".preloader");
     const body = document.querySelector("body");
@@ -10,15 +8,23 @@ function preloadInit(){
         preload.style.zIndex = -30;
         body.style.overflowY = 'visible';
         main.style.opacity = 1;
-    }, 4000);
+    }, 40);
 }
 //-------------------------------------------//
-// Click Event for Changing Language
+
+// Click Event for Changing Language //
 function langClick(){
     document.getElementById('lang-button').classList.toggle('active-lang');
     document.getElementById('vn-button').classList.toggle('langdown');
 }
 //-------------------------------------------//
+
+// Click Event for Search Area //
+function searchClick(){
+    document.querySelector("#input-search").classList.toggle("search-active");
+}
+//-------------------------------------------//
+
 // Change Product's Price When Change The Options
 function onprice(){
     var edition = document.getElementById('edition');
@@ -36,6 +42,7 @@ function onprice(){
     }
 }
 //-------------------------------------------//
+AOS.init(); // AOS Initialization
 preloadInit(); // Preloader Initialization
 
 
